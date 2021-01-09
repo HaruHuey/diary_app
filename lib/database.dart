@@ -31,7 +31,7 @@ class DatabaseHelper {
       onCreate: (Database db, int version) async {
         db.execute('''
         CREATE TABLE diary (
-        id integer primary key autoinrement,
+        id integer primary key autoincrement,
         title VARCHAR(255) not null,
         body TEXT,
         updatedAt DATETIME not null
